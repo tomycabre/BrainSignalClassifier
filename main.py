@@ -210,23 +210,22 @@ features_deathmetal = optimized_rolling_statistics(filtered_death, 256, 1)
 dataset = pd.concat([features_bethoven, features_deathmetal], axis=0)
 
 # Guardar el dataset generado en un archivo CSV
-output_file = "./data/dataset/dataset_features.csv"
+output_file = "./data/features/dataset_features.csv"
 dataset.to_csv(output_file, index=False)
-print(f"Dataset guardado como {output_file}")
 
 #! ==========================================
 #! Classifier
 #! ==========================================
 
 # Leer el dataset generado
-dataset = pd.read_csv("./data/dataset/dataset_features.csv")
+dataset = pd.read_csv("./data/features/dataset_features.csv")
 
 # Preparar los datos
 X = dataset.drop(columns=['señal'])  # Variables independientes (características)
 y = dataset['señal']  # Variable dependiente (etiqueta de clase)
 
 # Dividir en conjuntos de entrenamiento y prueba
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.5, random_state=42)
 
 # Entrenar el modelo Random Forest
 model = RandomForestClassifier(n_estimators=100, max_depth=None, random_state=42)

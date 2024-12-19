@@ -1,5 +1,7 @@
 # Brain Signal Classifier
 
+by Tomas Cabrera.
+
 ## Table of Contents
 
 - [Introduction](#introduction)
