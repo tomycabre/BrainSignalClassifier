@@ -81,7 +81,7 @@ Each `.dat` file contains the following columns:
 
 ### Requirements
 
-- Python 3.x
+- Python 3.11
 
 ### Packages:
 
@@ -92,26 +92,54 @@ Each `.dat` file contains the following columns:
 - `scikit-learn`
 - `seaborn`
 
-### Steps
+### Step 1: Clone the Repository
 
-1. Clone the Repository:
+```bash
+git clone https://github.com/tomycabre/BrainSignalClassifier.git
+cd AI-Web-Scrapper
+```
 
-   ```bash
-   git clone https://github.com/your_username/brain-signal-classifier.git
-   cd brain-signal-classifier
-   ```
+### Step 2: Virtual Environment Setup
 
-2. Create a Virtual Environment (optional but recommended):
+#### Windows
 
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: .\venv\Scripts\activate
-   ```
+```bash
+py -m venv venv
+```
 
-3. Install Dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
+#### MacOS
+
+```bash
+python3 -m venv venv
+```
+
+### Step 3: Activate the Virtual Environment
+
+#### Windows
+
+```bash
+.\venv\Scripts\activate.bat
+```
+
+#### MacOS
+
+```bash
+source venv/bin/activate
+```
+
+### Step 4: Install Required Packages
+
+#### Windows
+
+```bash
+py -m pip install -r requirements.txt
+```
+
+#### MacOS
+
+```bash
+pip install -r requirements.txt
+```
 
 ## Usage
 
@@ -127,9 +155,9 @@ python main.py
 
 ### Process Overview:
 
-6. **Evaluation**:
-   - Displays a confusion matrix.
-   - Prints accuracy and classification report.
+- **Evaluation**:
+  - Displays a confusion matrix.
+  - Prints accuracy and classification report.
 
 ## Results
 
@@ -174,7 +202,7 @@ We welcome contributions! Please open issues or submit pull requests.
 2. **Clone Your Fork**:
 
    ```bash
-   git clone https://github.com/your_username/brain-signal-classifier.git
+   git clone https://github.com/tomycabre/BrainSignalClassifier.git
    cd brain-signal-classifier
    ```
 
