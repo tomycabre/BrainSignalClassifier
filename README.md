@@ -83,7 +83,7 @@ Each `.dat` file contains the following columns:
 
 ### Requirements
 
-- Python 3.11
+- Python +3.11
 
 ### Packages:
 
