@@ -2,6 +2,7 @@
 #! ==========================================
 #! Imports
 #! ==========================================
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -112,8 +113,8 @@ plt.show()
 #! ==========================================
 
 Fs = 512  # Frecuencia de muestreo
-lowcut = 1.0  # Frecuencia de corte baja (Hz)
-highcut = 50.0  # Frecuencia de corte alta (Hz)
+lowcut = 1.0  # Frecuencia de corte baja 
+highcut = 50.0  # Frecuencia de corte alta 
 
 # Función de filtro pasa-banda
 def butter_bandpass(lowcut, highcut, fs, order=6):
