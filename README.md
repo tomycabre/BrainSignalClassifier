@@ -173,17 +173,16 @@ python main.py
 ### Sample Output
 
 ```markdown
-Accuracy: 0.85
-Classification Report:
+Reporte de Clasificación:
 precision recall f1-score support
 
-           0       0.84      0.87      0.86        50
-           1       0.86      0.83      0.85        50
+           0       0.99      0.99      0.99     15234
+           1       0.99      0.99      0.99     14871
 
-    accuracy                           0.85       100
+    accuracy                           0.99     30105
 
-macro avg 0.85 0.85 0.85 100
-weighted avg 0.85 0.85 0.85 100
+macro avg 0.99 0.99 0.99 30105
+weighted avg 0.99 0.99 0.99 30105
 ```
 
 ### Plots
